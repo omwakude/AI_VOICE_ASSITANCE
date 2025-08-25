@@ -1,0 +1,27 @@
+2025-08-25 10:48:24,667 [DEBUG] Loaded 107 commands and 3 unique intents.
+2025-08-25 10:48:26,707 [INFO] Intent model trained: 107 commands and 3 intents.
+2025-08-25 10:48:32,362 [DEBUG] Received input: 'open_notepad'
+2025-08-25 10:48:32,419 [DEBUG] Predicted intent: 'music_play'
+2025-08-25 10:48:32,419 [DEBUG] TF-IDF features shape: (1, 150)
+2025-08-25 10:48:32,483 [DEBUG] Prediction probabilities: [0.454 0.114 0.432]
+2025-08-25 10:48:32,483 [DEBUG] Maximum confidence: 0.45
+2025-08-25 10:48:32,483 [INFO] Executing command for intent 'music_play'
+2025-08-25 10:48:32,506 [INFO] Successfully executed command for intent: 'music_play'
+2025-08-25 10:48:32,583 [DEBUG] Received input: 'open_notepad'
+2025-08-25 10:48:32,633 [DEBUG] Predicted intent: 'music_play'
+2025-08-25 10:48:32,633 [DEBUG] TF-IDF features shape: (1, 150)
+2025-08-25 10:48:32,704 [DEBUG] Prediction probabilities: [0.454 0.114 0.432]
+2025-08-25 10:48:32,704 [DEBUG] Maximum confidence: 0.45
+2025-08-25 10:48:32,704 [INFO] Executing command for intent 'music_play'
+2025-08-25 10:48:32,736 [INFO] Successfully executed command for intent: 'music_play'
+2025-08-25 10:48:32,794 [DEBUG] Received input: 'open_notepad'
+2025-08-25 10:48:32,872 [DEBUG] Predicted intent: 'music_play'
+2025-08-25 10:48:32,872 [DEBUG] TF-IDF features shape: (1, 150)
+2025-08-25 10:48:32,937 [DEBUG] Prediction probabilities: [0.454 0.114 0.432]
+2025-08-25 10:48:32,945 [DEBUG] Maximum confidence: 0.45
+2025-08-25 10:48:32,945 [INFO] Executing command for intent 'music_play'
+2025-08-25 10:48:32,968 [INFO] Successfully executed command for intent: 'music_play'
+2025-08-25 10:52:13,711 [WARNING] Not Found: /favicon.ico
+2025-08-25 11:04:49,079 [INFO] C:\Users\omwak\OneDrive\Desktop\AI_VOICE_ASSITANCE\chatbot\intent_model.py changed, reloading.
+2025-08-25 11:06:08,431 [DEBUG] Training examples: 10467, Validation examples: 2617
+2025-08-25 11:06:08,438 [DEBUG] Unique intents: 7
