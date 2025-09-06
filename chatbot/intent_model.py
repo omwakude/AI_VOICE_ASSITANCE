@@ -13,17 +13,67 @@ import socket
 import webbrowser
 
 # -----------------------------
-# 1. Train intent classifier
-# -----------------------------
+# 1. Train intent classifier44444444444444444444 rows repted
 commands = [
+    # System operations
     "shutdown system", "restart system", "sleep computer", "lock computer", "sign out user",
+    "shutdown system", "restart system", "sleep computer", "lock computer", "sign out user",
+    "shutdown system", "restart system", "sleep computer", "lock computer", "sign out user",
+    "shutdown system", "restart system", "sleep computer", "lock computer", "sign out user",
+
+    # Folders and files
     "open downloads folder", "open documents folder", "open desktop folder", "open pictures folder", 
     "create new folder", "delete selected file", "rename file", "copy file", "move file",
+    "open downloads folder", "open documents folder", "open desktop folder", "open pictures folder", 
+    "create new folder", "delete selected file", "rename file", "copy file", "move file",
+    "open downloads folder", "open documents folder", "open desktop folder", "open pictures folder", 
+    "create new folder", "delete selected file", "rename file", "copy file", "move file",
+    "open downloads folder", "open documents folder", "open desktop folder", "open pictures folder", 
+    "create new folder", "delete selected file", "rename file", "copy file", "move file",
+
+    # Applications - open
     "open notepad", "open calculator", "open paint", "open word", "open excel", "open powerpoint",
     "open chrome", "open edge", "open firefox", "open command prompt", "open powershell",
+    "open notepad", "open calculator", "open paint", "open word", "open excel", "open powerpoint",
+    "open chrome", "open edge", "open firefox", "open command prompt", "open powershell",
+    "open notepad", "open calculator", "open paint", "open word", "open excel", "open powerpoint",
+    "open chrome", "open edge", "open firefox", "open command prompt", "open powershell",
+    "open notepad", "open calculator", "open paint", "open word", "open excel", "open powerpoint",
+    "open chrome", "open edge", "open firefox", "open command prompt", "open powershell",
+
+    # Applications - close
+    "close notepad", "close calculator", "close paint", "close word", "close excel", "close powerpoint",
+    "close chrome", "close edge", "close firefox", "close command prompt", "close powershell",
+    "close notepad", "close calculator", "close paint", "close word", "close excel", "close powerpoint",
+    "close chrome", "close edge", "close firefox", "close command prompt", "close powershell",
+    "close notepad", "close calculator", "close paint", "close word", "close excel", "close powerpoint",
+    "close chrome", "close edge", "close firefox", "close command prompt", "close powershell",
+    "close notepad", "close calculator", "close paint", "close word", "close excel", "close powerpoint",
+    "close chrome", "close edge", "close firefox", "close command prompt", "close powershell",
+
+    # Music controls
     "play music", "pause music", "stop music", "next song", "previous song", "increase volume", "decrease volume", "mute volume",
+    "play music", "pause music", "stop music", "next song", "previous song", "increase volume", "decrease volume", "mute volume",
+    "play music", "pause music", "stop music", "next song", "previous song", "increase volume", "decrease volume", "mute volume",
+    "play music", "pause music", "stop music", "next song", "previous song", "increase volume", "decrease volume", "mute volume",
+
+    # Browsers
     "open youtube", "open gmail", "open google", "refresh page", "open new tab", "close tab", "switch tab", "open facebook",
+    "open youtube", "open gmail", "open google", "refresh page", "open new tab", "close tab", "switch tab", "open facebook",
+    "open youtube", "open gmail", "open google", "refresh page", "open new tab", "close tab", "switch tab", "open facebook",
+    "open youtube", "open gmail", "open google", "refresh page", "open new tab", "close tab", "switch tab", "open facebook",
+
+    # Network and device controls
     "turn on wifi", "turn off wifi", "turn on bluetooth", "turn off bluetooth", "increase brightness", "decrease brightness",
+    "turn on wifi", "turn off wifi", "turn on bluetooth", "turn off bluetooth", "increase brightness", "decrease brightness",
+    "turn on wifi", "turn off wifi", "turn on bluetooth", "turn off bluetooth", "increase brightness", "decrease brightness",
+    "turn on wifi", "turn off wifi", "turn on bluetooth", "turn off bluetooth", "increase brightness", "decrease brightness",
+
+    # System UI
+    "change wallpaper", "enable dark mode", "disable dark mode",
+    "minimize window", "maximize window", "close window", "switch window", "snap window left", "snap window right",
+    "take screenshot", "open snipping tool", "open task manager", "check system info", "open device manager", "open control panel",
+    "check ip address", "open network settings", "open sound settings", "open display settings",
     "change wallpaper", "enable dark mode", "disable dark mode",
     "minimize window", "maximize window", "close window", "switch window", "snap window left", "snap window right",
     "take screenshot", "open snipping tool", "open task manager", "check system info", "open device manager", "open control panel",
@@ -31,19 +81,71 @@ commands = [
 ]
 
 labels = [
+    # System operations
     "shutdown", "restart", "sleep", "lock", "signout",
+    "shutdown", "restart", "sleep", "lock", "signout",
+    "shutdown", "restart", "sleep", "lock", "signout",
+    "shutdown", "restart", "sleep", "lock", "signout",
+
+    # Folders and files
     "open_downloads", "open_documents", "open_desktop", "open_pictures",
     "create_folder", "delete_file", "rename_file", "copy_file", "move_file",
+    "open_downloads", "open_documents", "open_desktop", "open_pictures",
+    "create_folder", "delete_file", "rename_file", "copy_file", "move_file",
+    "open_downloads", "open_documents", "open_desktop", "open_pictures",
+    "create_folder", "delete_file", "rename_file", "copy_file", "move_file",
+    "open_downloads", "open_documents", "open_desktop", "open_pictures",
+    "create_folder", "delete_file", "rename_file", "copy_file", "move_file",
+
+    # Applications - open
     "open_notepad", "open_calc", "open_paint", "open_word", "open_excel", "open_ppt",
     "open_chrome", "open_edge", "open_firefox", "open_cmd", "open_powershell",
+    "open_notepad", "open_calc", "open_paint", "open_word", "open_excel", "open_ppt",
+    "open_chrome", "open_edge", "open_firefox", "open_cmd", "open_powershell",
+    "open_notepad", "open_calc", "open_paint", "open_word", "open_excel", "open_ppt",
+    "open_chrome", "open_edge", "open_firefox", "open_cmd", "open_powershell",
+    "open_notepad", "open_calc", "open_paint", "open_word", "open_excel", "open_ppt",
+    "open_chrome", "open_edge", "open_firefox", "open_cmd", "open_powershell",
+
+    # Applications - close
+    "close_notepad", "close_calc", "close_paint", "close_word", "close_excel", "close_ppt",
+    "close_chrome", "close_edge", "close_firefox", "close_cmd", "close_powershell",
+    "close_notepad", "close_calc", "close_paint", "close_word", "close_excel", "close_ppt",
+    "close_chrome", "close_edge", "close_firefox", "close_cmd", "close_powershell",
+    "close_notepad", "close_calc", "close_paint", "close_word", "close_excel", "close_ppt",
+    "close_chrome", "close_edge", "close_firefox", "close_cmd", "close_powershell",
+    "close_notepad", "close_calc", "close_paint", "close_word", "close_excel", "close_ppt",
+    "close_chrome", "close_edge", "close_firefox", "close_cmd", "close_powershell",
+
+    # Music controls
     "music_play", "music_pause", "music_stop", "music_next", "music_prev", "volume_up", "volume_down", "volume_mute",
+    "music_play", "music_pause", "music_stop", "music_next", "music_prev", "volume_up", "volume_down", "volume_mute",
+    "music_play", "music_pause", "music_stop", "music_next", "music_prev", "volume_up", "volume_down", "volume_mute",
+    "music_play", "music_pause", "music_stop", "music_next", "music_prev", "volume_up", "volume_down", "volume_mute",
+
+    # Browsers
     "browser_youtube", "browser_gmail", "browser_google", "browser_refresh", "browser_newtab", "browser_closetab", "browser_switchtab", "browser_facebook",
+    "browser_youtube", "browser_gmail", "browser_google", "browser_refresh", "browser_newtab", "browser_closetab", "browser_switchtab", "browser_facebook",
+    "browser_youtube", "browser_gmail", "browser_google", "browser_refresh", "browser_newtab", "browser_closetab", "browser_switchtab", "browser_facebook",
+    "browser_youtube", "browser_gmail", "browser_google", "browser_refresh", "browser_newtab", "browser_closetab", "browser_switchtab", "browser_facebook",
+
+    # Network and device controls
     "wifi_on", "wifi_off", "bt_on", "bt_off", "brightness_up", "brightness_down",
+    "wifi_on", "wifi_off", "bt_on", "bt_off", "brightness_up", "brightness_down",
+    "wifi_on", "wifi_off", "bt_on", "bt_off", "brightness_up", "brightness_down",
+    "wifi_on", "wifi_off", "bt_on", "bt_off", "brightness_up", "brightness_down",
+
+    # System UI
+    "wallpaper_change", "darkmode_on", "darkmode_off",
+    "win_minimize", "win_maximize", "win_close", "win_switch", "win_snap_left", "win_snap_right",
+    "screenshot", "snipping_tool", "task_manager", "system_info", "device_manager", "control_panel",
+    "ip_check", "network_settings", "sound_settings", "display_settings",
     "wallpaper_change", "darkmode_on", "darkmode_off",
     "win_minimize", "win_maximize", "win_close", "win_switch", "win_snap_left", "win_snap_right",
     "screenshot", "snipping_tool", "task_manager", "system_info", "device_manager", "control_panel",
     "ip_check", "network_settings", "sound_settings", "display_settings",
 ]
+
 
 # Train model
 model_clf = make_pipeline(TfidfVectorizer(), LinearSVC())
@@ -117,6 +219,21 @@ def execute_command(intent: str) -> str:
             os.system("start excel")
         elif intent == "open_ppt":
             os.system("start powerpnt")
+
+            # To close apps
+        elif intent == "close_notepad":
+           os.system("taskkill /f /im notepad.exe")
+        elif intent == "close_calc":
+           os.system("taskkill /f /im calc.exe")
+        elif intent == "close_paint":
+             os.system("taskkill /f /im mspaint.exe")
+        elif intent == "close_word":
+           os.system("taskkill /f /im winword.exe")
+        elif intent == "close_excel":
+              os.system("taskkill /f /im excel.exe")
+        elif intent == "close_ppt":
+           os.system("taskkill /f /im powerpnt.exe")
+        
 
         # ----------------- Browsers -----------------
         elif intent == "open_chrome":
